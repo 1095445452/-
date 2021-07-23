@@ -1,0 +1,16 @@
+<!--pages/index/lar.wxml-->
+<view class="container">
+  <text style="border: 5px solid;border-color: lightblue;width:20%;">My App</text>
+  <view class="input-wrap">
+    <view>用户名:</view>
+    <input value="{{username}}" bindinput="inputUsername" class="info-input"/>
+  </view>
+  <view class="input-wrap">
+    <view>密码:</view>
+    <input value="{{password}}" password="true" bindinput="inputPassword" class="info-input"/>
+  </view>
+
+  <button bindtap="login" class="login">登录</button>
+  <button bindtap="register" class="login">注册</button>
+</view>
+

@@ -1,0 +1,39 @@
+<!--pages/message/message.wxml-->
+
+<import src="../../components/tabBar/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />
+<text>{{user}}, message</text>
+<view class='top'>
+            <view bindtap='onTabsItemTap' data-index='{{index}}' class="top-item">
+                <text class="{{currentTabsIndex==index?'on':''}}">精彩评论</text>
+            </view>
+    </view>
+  <view class='newsBox'>
+    <block  wx:for="{{talks}}"  wx:for-index="talks" wx:key="talks">
+      <div class="newsItem">
+        <div class="yonghu">
+          <!-- <image class='newsImage' style="width:{{imageWidth}}px;;height:{{imageHeight}}px;" src='{{item.photo}}'></image> -->
+          <image class='newsImage' style="width:60rpx;;height:60rpx;" src='{{item.photo}}'></image>
+          <!-- <span class="userName udescription">{{item.name}}\n</span> -->
+          <!-- 这里原来是使用微信名，改成了使用小程序注册名。 -->
+          <span class="userName udescription">{{item.usernameForApp}}\n</span>
+          <view> </view>
+          </div>
+          <div class="newsContent">
+            <p class="newsDescription">
+              <span class='description'>{{item.content}}\n</span>
+              <view> </view>
+            </p>
+              <span class='newsDescription'>{{item.time}}</span>
+              <view> </view>
+              <text>\n</text>
+        </div>
+        </div>
+    </block>
+    </view>
+    <!-- //悬浮留言框实现 -->
+<view class="talk">
+    <input class='input' type='text' value='' confirm-type='send' placeholder='请输入留言' bindinput='talkInput' value='{{inputValue}}'></input>
+    <!-- <button  class="confirm"  bindtap="submit">确定</button> -->
+    <button  class="confirm"  bindtap="submit" type="default" style="width: 170rpx;height: 100rpx">确定</button>
+</view>

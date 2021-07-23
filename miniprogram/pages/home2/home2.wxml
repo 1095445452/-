@@ -1,0 +1,33 @@
+<!--pages/home2/home2.wxml-->
+<text>pages/home2/home2.wxml</text>
+<import src="../../components/tabBar/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />
+<!-- 图表 -->
+<canvas
+ style="width: 400px; height: 500px;"
+ canvas-id="yueEle"
+ binderror="canvasIdErrorCallback"
+></canvas>
+<!-- 弹出输入框 -->
+<!-- <view class="body">
+  <button bindtap='eject'>弹窗</button>
+</view> -->
+<view class="butt">
+  <button bindtap='eject'>录入今日血糖</button>
+</view> 
+<view class="model" catchtouchmove='preventTouchMove' wx:if='{{showModal}}'></view>
+<view class="modalDlg" catchtouchmove='preventTouchMove' wx:if='{{showModal}}'>
+  <view class='windowRow'>
+    <text class='userTitle'>血糖录入
+  </text>
+    <view class='back' bindtap='back'>
+      返回
+    </view>
+  </view>
+  <view class='wishName'>
+    <input bindinput='wish_put' placeholder='血糖输入 单位：mmol/L' class='wish_put'></input>
+  </view>
+  <view class='wishbnt'>
+    <button class='wishbnt_bt' bindtap='submit'>确定</button>
+  </view>
+</view>

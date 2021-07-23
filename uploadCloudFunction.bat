@@ -1,0 +1,1 @@
+"D:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-2g2jbgeta99c24cc --n quickstartFunctions --r --project "C:\Users\10954\Desktop\网课\大二下\小学期\chat" --report

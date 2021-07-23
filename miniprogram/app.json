@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/manage/manage",
+    "pages/mine/mine",
+    "pages/index/doctor",
+    "pages/index/patient",
+    "pages/index/lar",
+    "pages/home2/home2",
+    "pages/mine2/mine2",
+    "pages/message/message"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "留言板",
+    "navigationBarTextStyle": "black"
+  },
+  
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

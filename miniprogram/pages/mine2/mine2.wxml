@@ -1,0 +1,4 @@
+<!--pages/mine2/mine2.wxml-->
+<text>pages/mine2/mine2.wxml</text>
+<import src="../../components/tabBar/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />

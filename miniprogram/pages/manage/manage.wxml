@@ -1,0 +1,4 @@
+<!--pages/manage/manage.wxml-->
+<text>{{user}}, manage today </text>
+<import src="../../components/tabBar/tabBar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />

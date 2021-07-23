@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <text style="border: 5px solid;border-color: lightblue;width:20%;">My App</text>
+  <view class="img">
+    <button type="primary" bindtap="toDoctor">doctor</button>
+  </view>
+  <text>-----------------\n</text>
+  <view class="img">
+    <button type="primary" bindtap="toPatient">patient</button>
+  </view>
+
+</view>
